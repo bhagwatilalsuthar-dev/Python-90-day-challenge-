@@ -1,0 +1,117 @@
+
+
+nums=[3,7,2,9,5]
+def MaximumNum(Arry):
+    high=float("-inf")
+    for eachNum in Arry:
+        if(high<eachNum):
+            high=eachNum
+    print(high)
+
+# MaximumNum(nums)
+
+def eachnum(counterList):
+    counter=0
+    for each in counterList:
+        if(each>0):
+            counter+=1
+    print(counter)
+# eachnum([4,5,-8,7,-9,3,0,-9,-7])
+
+
+
+def vowelnum(vowelList):
+ counter=0
+ Upper=vowelList.upper()
+#  print(Upper)
+ for eachVowel in Upper:
+    # eachVowel.upper()
+    # print(eachVowel)
+    if(eachVowel=="A"):
+     counter+=1
+    if(eachVowel=="U"):
+      counter+=1
+    if(eachVowel=="E"):
+        counter+=1
+    if(eachVowel=="I"):
+        counter+=1
+    if(eachVowel=="O"):
+      counter+=1
+ print(counter)
+
+# vowelnum("aaiq")
+
+
+def eachVowel(VowelStr):
+   counter=0
+   Upper=VowelStr.upper()
+#    print(Upper)
+   for eachnum in Upper:
+      if(eachnum=="A" or eachnum== "E" or eachnum=="I" or eachnum=="O" or eachnum=="U"):
+         counter+=1
+   print(counter)
+# eachVowel("BHagwti")
+
+
+
+nums=[1,2,2,4,5]
+def elements(elementList):
+   myList=[]
+   for eachnum in elementList:
+      if(eachnum in myList):
+         return False
+      else:
+            myList.append(eachnum)
+   return True
+
+# print(elements(nums))
+
+
+def num(x):
+  total=1
+  for each in x:
+    total*=each
+  print(total)
+# num([2,3,4,5])
+
+
+
+
+stack=[]
+def pushnum(x):
+   stack.append(x)
+   return stack
+def popnum():
+   stack.pop()
+   return stack
+def peeknum(y):
+   
+   return stack[y]
+p=pushnum(10)
+p=pushnum(20)
+p=pushnum(30)
+p=pushnum(40)
+p=pushnum(50)
+print(p)
+print(popnum())
+print(popnum())
+print(peeknum(-1),"top element")
+
+stack=[]
+def checkValid(input):
+   for x in input:
+      if(x=="("or "[" or "{"):
+         stack.append(x)
+      else:
+         Topvalue=stack[-1]
+         if(x==")"  or x=="]"  or x=="}" and Topvalue=="("or Topvalue=="["or Topvalue=="{"):
+            stack.pop()
+         else:
+            return False
+   if(len(stack)==0):
+      return True
+   else:
+      return False
+
+ans=checkValid("([[[]]])")
+# print(ans)
