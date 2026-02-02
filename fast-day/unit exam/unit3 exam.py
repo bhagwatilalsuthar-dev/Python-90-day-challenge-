@@ -12,7 +12,7 @@ def MaximumNumber(NumberOfList):
     for each in eachnum:
         total+=each
     myList.append(total)
- print(myList)
+#  print(myList)
  highValue(myList)
 def highValue(x):
    high=float('-inf')

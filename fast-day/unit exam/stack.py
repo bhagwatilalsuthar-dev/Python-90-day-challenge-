@@ -11,7 +11,11 @@ def reverseFinder(revStr):
     print(var)
    
 
-reverseFinder('hello')
+# reverseFinder('hello')
+
+
+
+
 def isPalindrome(palstr):
     stack=[]
     for palItem in palstr:
@@ -23,6 +27,10 @@ def isPalindrome(palstr):
           return'not palindrome'
     return'palindrome'
 # print(isPalindrome('madm'))
+
+
+
+
 elements = [1,2,3,4]
 def revStack(revList):
     stack = []
@@ -34,4 +42,18 @@ def revStack(revList):
     # pop elements to reverse
     while stack:
         print(stack.pop(), end=" ")
-revStack(elements)
+# revStack(elements)
+
+def greater(arry):
+  lenght=len(arry)
+  for eachnum in range(lenght):
+    #  print(eachnum)
+    nextNumber=-1
+    for each in (eachnum+1,lenght):
+    #    print(each)
+     if arry[each]>arry[eachnum]:
+        nextNumber=arry[each]
+        break
+    print(arry[eachnum],"->",nextNumber)
+
+greater([4,5,2,10])

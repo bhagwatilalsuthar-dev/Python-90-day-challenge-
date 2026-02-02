@@ -87,15 +87,15 @@ def popnum():
 def peeknum(y):
    
    return stack[y]
-p=pushnum(10)
-p=pushnum(20)
-p=pushnum(30)
-p=pushnum(40)
-p=pushnum(50)
-print(p)
-print(popnum())
-print(popnum())
-print(peeknum(-1),"top element")
+# p=pushnum(10)
+# p=pushnum(20)
+# p=pushnum(30)
+# p=pushnum(40)
+# p=pushnum(50)
+# print(p)
+# print(popnum())
+# print(popnum())
+# print(peeknum(-1),"top element")
 
 stack=[]
 def checkValid(input):

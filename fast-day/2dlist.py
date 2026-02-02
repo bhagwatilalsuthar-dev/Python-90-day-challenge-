@@ -3,9 +3,9 @@ Sum=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 def finder(findOfRowSum):
     finderList=[]
     for findSum in findOfRowSum:
-        finderList.append(max(findSum))
+        finderList.append(sum(findSum))
     print(finderList)
-finder(Sum)
+# finder(Sum)
 # 2
 matrix = [
     [3, 1, 7],
