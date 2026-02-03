@@ -44,16 +44,22 @@ def revStack(revList):
         print(stack.pop(), end=" ")
 # revStack(elements)
 
-def greater(arry):
-  lenght=len(arry)
-  for eachnum in range(lenght):
-    #  print(eachnum)
-    nextNumber=-1
-    for each in (eachnum+1,lenght):
-    #    print(each)
-     if arry[each]>arry[eachnum]:
-        nextNumber=arry[each]
-        break
-    print(arry[eachnum],"->",nextNumber)
 
-greater([4,5,2,10])
+
+
+# 1 stack to string 
+stack=['a','b','c']
+# print(''.join(stack))
+
+
+# 2 remove all 2 in List
+# stack=[1,2,3,4,2,4]
+# for x in stack:
+#    if(x!=2):
+    #   print(x)
+
+
+# 3 isPalindrome
+s='madam'
+print(s==s[::-1])
+

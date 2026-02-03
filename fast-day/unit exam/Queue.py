@@ -1,14 +1,14 @@
-# nums=[10,20,30,40,50]
+nums=[10,20,30,40,50]
 
-# def queuenum(ListQueue):
-#  queue=[]
-#  myQueue=[]
-#  for each in ListQueue:
-#   queue.append(each)
-#  for eachnum in ListQueue:
-#   var=queue.pop()
-#   myQueue.append(var)
-#  print(myQueue)
+def queuenum(ListQueue):
+ queue=[]
+ myQueue=[]
+ for each in ListQueue:
+  queue.append(each)
+ for eachnum in ListQueue:
+  var=queue.pop()
+  myQueue.append(var)
+ print(myQueue)
 
 # queuenum(nums)
 
@@ -25,8 +25,8 @@ def sumList(x,y):
     print(queue)
      
 
-# sumList([10,20,30,40,50],3
-# )
+sumList([10,20,30,40,50],3
+)
 
 def sumnum(sumList,sumValue):
   queue=[]
@@ -92,17 +92,45 @@ ans = sum(3)
 # print(ans)
 
 
-def sumList(arry):
-  n=len(arry)
-  myFinalList=[]
-  for sumeach in range(n):
-    total=0
-    for each in range(sumeach,n):
-     total+=arry[each]
-     
-    myFinalList.append(total)
-  return myFinalList
-  
 
-ans=sumList([4,8,10,10])
-print(ans)
+def sumList(arry):
+  # n=len(arry)
+  # myFinalList=[]
+  # for sumeach in range(n):
+  #   total=0
+  #   for each in range(sumeach,n):
+  #    total+=arry[each]
+     
+  #   myFinalList.append(total)
+  # return myFinalList
+  total=0
+  myList=[]
+  for x in arry:
+    total+=x
+  # print(total)
+  index = 0
+  for y in arry:
+    if(not(index == 0)):
+      total-=arry[index-1]
+    myList.append(total)
+
+    # if(index == 0):
+    #    myList.append(total)
+    # else:
+      
+    #   myList.append(total)
+    index+=1
+   
+  print(myList)
+  
+  
+# ans=sumList([1,8,10,10])
+# print(ans)
+
+
+
+
+
+
+
+
