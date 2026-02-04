@@ -25,8 +25,8 @@ def sumList(x,y):
     print(queue)
      
 
-sumList([10,20,30,40,50],3
-)
+# sumList([10,20,30,40,50],3
+# )
 
 def sumnum(sumList,sumValue):
   queue=[]

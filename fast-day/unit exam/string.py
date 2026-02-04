@@ -28,22 +28,33 @@ def valueOfpalindrome(string):
     else:
         return "not palindrome"
     
-ans=valueOfpalindrome('mada')
+# ans=valueOfpalindrome('mada')
 # print(ans)
 
 
 def BalanceBracket(Bracket):
-    counter=0
-    for EachBalnce in Bracket:
-        if EachBalnce=='('or EachBalnce=='['or EachBalnce=='{':
-            counter=counter+1
-        if EachBalnce==')'or EachBalnce==']'or EachBalnce=='}':
-            counter=counter-1
-    if counter==0:
-      return 'Balance'
-    else:
-        return 'not balance'
+    i=0
+    j=len(Bracket)-1
+    if(len(Bracket) % 2 != 0):
+        return False
+    print("aage badna padega")
+    myPairDict = {
+        "(" : ")",
+        "[" : "]",
+        "{" : "}"
+    }
+    while i < j:
+        # print(i,j,Bracket[i], Bracket[j])
+        # print( Bracket[i],Bracket[j], myPairDict[Bracket[i]],  )
+        if( Bracket[j] != myPairDict[Bracket[i]] ):
+        # if( (Bracket[i] == "(" and Bracket[j] != ")") or (Bracket[i] == "[" and Bracket[j] != "]") or(Bracket[i] == "{" and Bracket[j] != "}") ):
+            # print(i,j)
+            return False
+        i+=1
+        j-=1
+    return True
     
-result=BalanceBracket('((([[[{{{}}]]])))')
+    
+result=BalanceBracket('({])')
 print(result)
 

@@ -61,5 +61,22 @@ stack=['a','b','c']
 
 # 3 isPalindrome
 s='madam'
-print(s==s[::-1])
+# print(s==s[::-1])
+
+
+
+
+def balanceBracket(value):
+   stack=[]
+   for each in value:
+      if(each=="(" or each=="[" or each=="{"):
+         stack.append(each)
+         print(stack)
+      else:
+         stack.pop()==value
+         return "yes"
+   return "no"
+ans=balanceBracket("((([))")
+print(ans)
+
 
