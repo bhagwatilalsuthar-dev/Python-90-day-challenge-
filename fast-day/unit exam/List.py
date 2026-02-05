@@ -14,5 +14,21 @@ def SumTarget(value,Target):
         
     return[-1,-1]
         
-ans=SumTarget([1,2,3,4,5,6,7,8,9,10,11,12,13],24)
+# ans=SumTarget([1,2,3,4,5,6,7,8,9,10,11,12,13],24)
+# print(ans)
+
+
+def Duplicates(array):
+    i=0
+    j=1
+    for j in range(1,len(array)):
+        if(array[i] !=array[j]):
+            i+=1
+            array[i]=array[j]
+    return array[:i+1]
+    
+            
+       
+ans=Duplicates([1,2,2,3,4,4,5,5,6,7])
 print(ans)
+
