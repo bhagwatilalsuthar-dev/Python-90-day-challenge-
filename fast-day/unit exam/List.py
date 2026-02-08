@@ -29,6 +29,25 @@ def Duplicates(array):
     
             
        
-ans=Duplicates([1,2,2,3,4,4,5,5,6,7])
+# ans=Duplicates([1,2,2,3,4,4,5,5,6,7])
+# print(ans)
+
+def non_zero(arrey):
+    
+    i=0
+    j=0
+    while j<len(arrey):
+        if arrey[j]!=0:
+            arrey[i]=arrey[j]
+        elif arrey[j]==0:
+            j+=1
+    return arrey
+
+
+
+
+ans=non_zero([1,0,2,0,3,4])
 print(ans)
+
+
 

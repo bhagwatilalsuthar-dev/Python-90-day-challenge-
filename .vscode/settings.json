@@ -1,0 +1,7 @@
+{
+    "terminal.integrated.commandsToSkipShell": [
+        ""
+    ],
+    "terminal.integrated.cwd": "${userHome}",
+    "terminal.integrated.splitCwd": "inherited"
+}

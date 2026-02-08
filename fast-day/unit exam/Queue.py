@@ -124,8 +124,8 @@ def sumList(arry):
   print(myList)
   
   
-# ans=sumList([1,8,10,10])
-# print(ans)
+ans=sumList([1,8,10,10])
+print(ans)
 
 
 
