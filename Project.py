@@ -1,7 +1,7 @@
 import pandas as pd
 
 # STEP 1: Load dataset
-df = pd.read_csv("c:\\Users\Education\\Downloads\\ecommerce_dataset_updated.csv")
+df = pd.read_csv("ecommerce_dataset_updated.csv")
 
 # STEP 2: Data Cleaning
 
